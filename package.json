@@ -1,0 +1,20 @@
+{
+  "name": "react-component-logger",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+        "test": "echo \"Error: no tests specified\" && exit 1"
+    },
+  "keywords": ["react", "component logger", "logger", "console","react debugger"],
+  "author": "Babar Bilal",
+  "license": "MIT",
+  "description": "react-component-logger is a React debugging utility that helps track component renders, props changes, and mounting/unmounting lifecycle events in a visually distinct way. Each component gets a unique color for better readability in the console",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/babarbilal56/react-component-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/babarbilal56/react-component-logger/issues"
+  },
+  "homepage": "https://github.com/babarbilal56/react-component-logger#readme"
+}
