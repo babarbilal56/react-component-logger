@@ -58,6 +58,8 @@ function ExampleComponent({ name }) {
   return <p>Hello, {name}!</p>;
 }
 ```
+👉 sandbox: https://codesandbox.io/p/sandbox/component-logger-sz7hcx
+
 <img src="./assets/example1.png" alt="example image">
 <img src="./assets/example2.png" alt="example image">
 <img src="./assets/example3.png" alt="example image">
