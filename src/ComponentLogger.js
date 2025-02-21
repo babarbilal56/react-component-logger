@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 
-// Declare WeakMaps to store component instances and hooks
+
 const components = new WeakMap();
 const instances = new WeakMap();
-const renderCounts = new WeakMap(); // Track render counts
+const renderCounts = new WeakMap(); 
 
-// Helper function to generate a color based on a string (component name)
+
 function stringToColor(str) {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
@@ -19,12 +19,12 @@ function stringToColor(str) {
   return color;
 }
 
-// Console log helper
+
 function log(...args) {
   console.log(...args);
 }
 
-// Get the current React component context
+
 function usecomLogCurrentComponentContext() {
   const owner =
     React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner.current || 
@@ -60,7 +60,6 @@ export default function comLog(...inlined) {
   const prevProps = useRef(null); // Track previous props
   const [name, owner, id, hookPath, logPath] = usecomLogCurrentComponentContext();
 
-  // Assign a unique color to the component based on its name
   if (!components.has(id)) {
     components.set(id, stringToColor(name));
   }
@@ -71,7 +70,6 @@ export default function comLog(...inlined) {
   }
   const instanceMarks = instances.get(id);
 
-  // Track how many times the component re-renders
   if (!renderCounts.has(id)) {
     renderCounts.set(id, 0);
   }
