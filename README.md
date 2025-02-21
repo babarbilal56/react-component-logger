@@ -24,7 +24,7 @@ Wrap your functional components with `comLog()` to log render counts, prop chang
 
 ```jsx
 import React, { useState } from 'react';
-import comLog from 'react-component-logger';
+import {comLog} from 'react-component-logger';
 
 function Counter({ count }) {
   comLog(); // Enable logging for this component
@@ -49,7 +49,7 @@ You can also log specific variables or values:
 
 ```jsx
 import React, { useState } from 'react';
-import comLog from 'react-component-logger';
+import {comLog} from 'react-component-logger';
 
 function ExampleComponent({ name }) {
   const log = comLog();
